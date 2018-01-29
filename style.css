@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 1280px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 1280px;
+}
+
+.current_situation {
+    text-align: center;
+    color: #330000;
+    background-color: ffcfcf;
+    padding: 8px;
+}
+
+.snslinkswrapper {
+    text-align: right;
+}
+.snslinks {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.current_situation {
+    font-size: 80%;
+    background-color: pink;
+    color: red;
+    padding: 8px;
+}
+
+.snslinks .snslink {
+    padding: 8px;
+}
+
+.logo {
+    text-align : center;
+    margin: 24px;
+}
+
+.logo h1 {
+    font-size : 1200%;
+}
+
+.main_skill {
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin: 8px 0px 0px 0px;
+    padding: 8px;
+    letter-spacing: 4px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.feature {
+    background-color: #f0f0f0;
+    margin: 8px;
+    padding: 8px;
+}
+
+.feature h3 {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+}
+
+.feature p {
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.sns {
+    padding: 8px;
+}
+.sns ul li {
+    display: inline;
+    padding: 8px;
+}
+.media_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.media {
+    text-align: center;
+}
+
+.media h3 {
+    padding: 8px;
+}
+
+.media img {
+    max-width: 240px;
+}
