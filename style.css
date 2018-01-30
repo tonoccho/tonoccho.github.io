@@ -74,12 +74,12 @@ footer {
     display: inline;
 }
 
-.medialinks {
+.medialinks, .features{
     padding: 24px 0px;
     text-align: center;
 }
 
-.medialink-text, .medialink-image {
-    text-align: center;
+.medialink-text, .medialink-image, .feature-title, .feature-excerpt {
     padding: 4px;
+    margin: 4px;
 }
