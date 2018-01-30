@@ -3,91 +3,141 @@
 
 <head>
   <title>Terry's Today</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="current_situation">
+      <div class="current_situation popovers">
         Looking for a job | Applying work visa on the beginning of March
       </div>
       <div class="logo">
-        <img src="images/website_logo.png" />
+        <img src="images/website_logo.png" class="img-fluid" />
         <br/>
         <h1>Terry's Today</h1>
       </div>
-      <div class="main_skill">
+      <div class=" main_skill ">
         DEVELOPMENT, TESTING, AUTOMATION, MANAGEMENT, FISHING, PHOTOGRAPHICS, GARDENING
       </div>
 
     </header>
-    <div class="content-main">
-      <img src="images/terry.png" />
+    <div class="content-main ">
+      <img src="images/terry.png" class="img-fluid" />
       <div class="features">
-        <div class="feature">
-          <h3>Latest News</h3>
-          <p>Successful student would be the outcome.</p>
+        <h2>Features</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col feature-title">
+              Job History
+            </div>
+            <div class="col feature-title">
+              Skills
+            </div>
+            <div class="col feature-title">
+              Character
+            </div>
+          </div>
+          <div class="row">
+            <div class="col feature-image">
+              <img src="images/history.png" class="img-thumbnail" />
+            </div>
+            <div class="col feature-image">
+              <img src="images/skills.png" class="img-thumbnail" />
+            </div>
+            <div class="col feature-image">
+              <img src="images/character.png" class="img-thumbnail" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col feature-excerpt">
+              <p>More than 10 years of experience</p>
+            </div>
+            <div class="col feature-excerpt">
+              <p>Wide range of experience</p>
+            </div>
+            <div class="col feature-excerpt">
+              <p>Can-Do person</p>
+            </div>
+          </div>
         </div>
-        <div class="feature">
-          <h3>Story</h3>
-          <p>1 year story: Bringing stability to a chaotic project.</p>
-        </div>
-        <div class="feature">
-          <h3>Opinion</h3>
-          <p>Why New Zeakand? Why not Japan?</p>
+      </div>
+      <div class="medialinks">
+        <h2>Other Medias</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col medialink-image">
+              <a href="https://seijitonouchi.wordpress.com/ " target="_blank ">
+                <img src="images/blog1.png" class="img-thumbnail" />
+              </a>
+            </div>
+            <div class="col medialink-image">
+              <a href="https://nzsaien.wordpress.com/ " target="_blank ">
+                <img src="images/blog2.png" class="img-thumbnail" />
+              </a>
+            </div>
+            <div class="col medialink-image">
+              <a href="https://toeic900noneed.wordpress.com/ " target="_blank ">
+                <img src="images/blog3.png" class="img-thumbnail" />
+              </a>
+            </div>
+            <div class="col medialink-image">
+              <a href="https://terrystechnote.wordpress.com/ " target="_blank ">
+                <img src="images/blog4.png" class="img-thumbnail" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col medialink-text">
+              Seiji Tonouchi on the go
+            </div>
+            <div class="col medialink-text">
+              NZで楽しむ家庭菜園と木
+            </div>
+            <div class="col medialink-text">
+              TOEIC900点台とか別に目指さないブログ
+            </div>
+            <div class="col medialink-text">
+              Terry's tech note
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
 
-      <div class="media_wrapper">
-        <div class="media">
-          <h3>Seiji Tonouchi on the go</h3>
-          <a href="https://seijitonouchi.wordpress.com/" target="_blank">
-            <img src="images/blog1.png" />
-          </a>
-        </div>
-        <div class="media">
-          <h3>NZで楽しむ家庭菜園と木</h3>
-          <a href="https://nzsaien.wordpress.com/" target="_blank">
-            <img src="images/blog2.png" />
-          </a>
-        </div>
-        <div class="media">
-          <h3>TOEIC900点台とか別に目指さないブログ</h3>
-          <a href="https://toeic900noneed.wordpress.com/" target="_blank">
-            <img src="images/blog3.png" />
-          </a>
-        </div>
-        <div class="media">
-          <h3>Terry's tech note</h3>
-          <a href="https://terrystechnote.wordpress.com/  " target="_blank">
-            <img src="images/blog4.png" />
-          </a>
-        </div>
-      </div>
+    <footer class="footer">
 
-      <div class="sns">
+
+      <div class="sns ">
         <ul>
           <li>
-            <a href="https://twitter.com/tonoccho" target="_blank">
-              <img src="images/twitter.png" />
+            <a href="https://twitter.com/tonoccho " target="_blank ">
+              <img src="images/twitter.png " />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/tonoccho" target="_blank">
-              <img src="images/facebook.png" />
+            <a href="https://www.facebook.com/tonoccho " target="_blank ">
+              <img src="images/facebook.png " />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/seiji-tonouchi/" target="_blank">
-              <img src="images/linkedin.png" />
+            <a href="https://www.linkedin.com/in/seiji-tonouchi/ " target="_blank ">
+              <img src="images/linkedin.png " />
             </a>
           </li>
           <li>
-            <a href="https://github.com/tonoccho" target="_blank">
-              <img src="images/github.png" />
+            <a href="https://github.com/tonoccho " target="_blank ">
+              <img src="images/github.png " />
             </a>
           </li>
         </ul>
