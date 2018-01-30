@@ -35,8 +35,6 @@ img {
     color: red;
 }
 
-.snslinks .snslink {
-}
 
 .logo {
     text-align : center;
@@ -65,28 +63,23 @@ img {
 }
 
 footer {
-    background-color: gray;
+    background-color: grey;
     color: white;
     text-align: center;
+    padding: 24px 0px;
 }
 
-.sns {
-}
+
 .sns ul li {
     display: inline;
 }
-.media_wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 
-.media {
+.medialinks {
+    padding: 24px 0px;
     text-align: center;
 }
 
-.media h3 {
-}
-
-.media img {
-    max-width: 240px;
+.medialink-text, .medialink-image {
+    text-align: center;
+    padding: 4px;
 }
