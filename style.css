@@ -19,7 +19,6 @@ img {
     text-align: center;
     color: #330000;
     background-color: ffcfcf;
-    padding: 8px;
 }
 
 .snslinkswrapper {
@@ -34,16 +33,13 @@ img {
 .current_situation {
     background-color: pink;
     color: red;
-    padding: 8px;
 }
 
 .snslinks .snslink {
-    padding: 8px;
 }
 
 .logo {
     text-align : center;
-    margin: 24px;
 }
 
 .main_skill {
@@ -51,28 +47,17 @@ img {
     font-weight: bold;
     background-color: black;
     color: white;
-    margin: 8px 0px 0px 0px;
-    padding: 8px;
-    letter-spacing: 4px;
 }
 
-#.features {
-#    display: grid;
-#    grid-template-columns: repeat(3, 1fr);
-#    grid-gap: 10px;
-#    grid-auto-rows: minmax(100px, auto);
-#}
+
 
 .feature {
     background-color: #f0f0f0;
-    margin: 8px;
-    padding: 8px;
 }
 
 .feature h3 {
     font-weight: bold;
     text-align: center;
-    padding: 4px;
 }
 
 .feature p {
@@ -83,15 +68,12 @@ footer {
     background-color: gray;
     color: white;
     text-align: center;
-    padding-top: 24px;
 }
 
 .sns {
-    padding: 8px;
 }
 .sns ul li {
     display: inline;
-    padding: 8px;
 }
 .media_wrapper {
     display: grid;
@@ -103,7 +85,6 @@ footer {
 }
 
 .media h3 {
-    padding: 8px;
 }
 
 .media img {
