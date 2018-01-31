@@ -2,7 +2,11 @@ body {
     background-color: black;
 }
 
-.container {
+img {
+    max-width: 100%;
+}
+
+.content {
     background-color: white;
     padding: 0;
     margin: 0 auto;
@@ -10,93 +14,112 @@ body {
 }
 
 /* Header settings --> */
-.container header .current_situation {
+.content header {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 16px;
+}
+.content header .current_situation {
     text-align: center;
     color: blue;
     background-color: lightblue;
 }
 
-.container header .main-title {
+.content header .main-title {
     font-size: 600%;
     text-align: center;
 }
 
-.container header .main_skill {
+.content header .main_skill {
     text-align: center;
     font-weight: bold;
     background-color: black;
     color: white;   
     padding: 8px 0px;
-    margin: 0;
+    margin: 0px;
 }
 
-.container header .myface {
+.content header .myface {
     text-align: center;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
 }
 /* Header Settings <-- */
-
-
-.snslinkswrapper {
-    text-align: right;
+.content .content-main {
+    text-align: center;
 }
 
-.snslinks {
-    display: flex;
-    justify-content: flex-end;
+/* Features --> */
+.content .content-main .features {
+    padding : 16px 0px;
+    background-color: rgb(255, 235, 238);
+    
     
 }
-
-.current_situation {
-    background-color: pink;
-    color: red;
+.content .content-main .features h2 {
+    font-size : 300%;
+}
+.content .content-main .features .container{
+    width: 100%;
+}
+.content .content-main .features .container .row .feature {
+    text-align: center;
+    padding: 16px 0px 8px 0px;
+    margin: 0px;
 }
 
-
-.logo {
-    text-align : center;
-}
-
-
-
-img {
-    max-width: 100%;
-}
-
-.feature h3 {
+.content .content-main .features .container .row .feature p {
+    font-size: 130%;
     font-weight: bold;
-    text-align: center;
+    width: 100%;
 }
+/* Features <-- */
 
-.feature p {
-    text-align: center;
-}
-
-footer {
-    background-color: grey;
-    color: white;
-    text-align: center;
-}
-
-
-.sns ul li {
-    display: inline;
-}
-
-.medialinks, .features{
-    text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 768px) {
+/* Medialinks --> */
+.content .content-main .medialinks {
+    padding : 16px 0px;
+    background-color: rgb(227, 229, 255);
+    
     
 }
-
-@media screen and (min-width: 920px) {
-
+.content .content-main .medialinks h2 {
+    font-size : 300%;
 }
+
+.content .content-main .medialinks .container{
+    width: 100%;
+}
+
+.content .content-main .medialinks .container .row .medialink {
+    text-align: center;
+    padding: 16px 8px 8px 8px;
+    margin: 0px;
+}
+
+.content .content-main .medialinks .container .row .medialink p {
+    font-size: 100%;
+    font-weight: bold;
+    width: 100%;
+}
+/* Medialinks <-- */
+
+/* Footer --> */
+footer {
+    background-color: rgb(212, 212, 212);
+    color: rgb(53, 53, 53);
+    text-align: center;
+    padding: 24px 0px 48px 0px;
+}
+
+footer .sns ul li {
+    display: inline;
+    padding: 8px;
+}
+
+
+
+
+
+
