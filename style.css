@@ -1,3 +1,10 @@
+.body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+}
 .current_situation {
     text-align: center;
     color: #330000;
