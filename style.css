@@ -5,6 +5,7 @@
     
 }
 
+
 .snslinkswrapper {
     text-align: right;
 }
@@ -31,6 +32,10 @@
     color: white;
 }
 
+.myface {
+    width: 100%;
+}
+
 
 
 .feature {
@@ -50,7 +55,6 @@ footer {
     background-color: grey;
     color: white;
     text-align: center;
-    padding: 48px 0px;
 }
 
 
@@ -59,11 +63,5 @@ footer {
 }
 
 .medialinks, .features{
-    padding: 48px 16px 12px 16px;
     text-align: center;
-}
-
-.medialink-text, .medialink-image, .feature-title, .feature-excerpt {
-    padding: 4px;
-    margin: 4px;
 }
