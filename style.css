@@ -1,15 +1,3 @@
-
-
-body {
-    background-color: black;
-}
-
-.container {
-    background-color: white;
-    margin: 0 auto;
-    padding: 0px;
-}
-
 .current_situation {
     text-align: center;
     color: #330000;
