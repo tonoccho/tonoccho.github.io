@@ -62,7 +62,6 @@ img {
     width: 100%;
 }
 .content .content-main .features .container .row .feature {
-    text-align: center;
     text-shadow: 0px 0px 8px rgb(208, 255, 0);
     padding: 16px 0px 8px 0px;
     margin: 0px;
@@ -73,9 +72,11 @@ img {
 }
 
 .content .content-main .features .container .row .feature p {
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
     width: 100%;
+    text-align: center;
+    
     
 }
 
@@ -114,7 +115,6 @@ img {
 }
 
 .content .content-main .medialinks .container .row .medialink {
-    text-align: center;
     text-shadow: 0px 0px 8px rgb(251, 255, 0);
     padding: 16px 0px 8px 0px;
     margin: 0px;
@@ -124,11 +124,9 @@ img {
 	align-items: center;
 }
 
-.content .content-main .medialinks .container .row .medialink a{
+.content .content-main .medialinks .container .row .medialink p {
     text-align: center;
-}
-.content .content-main .medialinks .container .row .medialink a p {
-    font-size: 150%;
+    font-size: 250%;
     font-weight: bold;
     width: 100%;
 }
