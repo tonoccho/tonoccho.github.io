@@ -2,81 +2,177 @@ body {
     background-color: black;
 }
 
-
-.container {
-    background-color: white;
-  }
-
-.current_situation {
-    text-align: center;
-    color: #330000;
-    background-color: ffcfcf;
-    
-}
-
-.snslinkswrapper {
-    text-align: right;
-}
-
-.snslinks {
-    display: flex;
-    justify-content: flex-end;
-    
-}
-
-.current_situation {
-    background-color: pink;
-    color: red;
-}
-
-
-.logo {
-    text-align : center;
-}
-
-.main_skill {
-    text-align: center;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-}
-
 img {
     max-width: 100%;
 }
 
-.feature h3 {
+.content {
+    background-color: white;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header settings --> */
+.content header {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 16px;
+}
+.content header .current_situation {
+    text-align: center;
+    color: blue;
+    background-color: lightblue;
+}
+
+.content header .main-title {
+    font-size: 600%;
+    text-align: center;
+}
+
+.content header .main_skill {
+    text-align: center;
     font-weight: bold;
+    background-color: black;
+    color: white;   
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.content header .myface {
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+/* Header Settings <-- */
+.content .content-main {
     text-align: center;
 }
 
-.feature p {
+/* Features --> */
+.content .content-main .features {
+    padding : 16px 0px;
+}
+.content .content-main .features h2 {
+    font-size : 300%;
+}
+.content .content-main .features .container{
+    width: 100%;
+}
+.content .content-main .features .container .row .feature {
+    text-shadow: 0px 0px 8px rgb(208, 255, 0);
+    padding: 16px 0px 8px 0px;
+    margin: 0px;
+    width: 100%;
+    height: 480px;
+    display: flex;
+	align-items: center;
+}
+
+.content .content-main .features .container .row .feature p {
+    font-size: 250%;
+    font-weight: bold;
+    width: 100%;
     text-align: center;
-}
-
-footer {
-    background-color: grey;
-    color: white;
-    text-align: center;
-}
-
-
-.sns ul li {
-    display: inline;
-}
-
-.medialinks, .features{
-    text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 768px) {
+    
     
 }
 
-@media screen and (min-width: 920px) {
-
+.content .content-main .features .container .row .feature1,
+.content .content-main .features .container .row .feature2,
+.content .content-main .features .container .row .feature3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
+.content .content-main .features .container .row .feature1 {
+    background-image: url("images/history.png");
+    
+}
+
+.content .content-main .features .container .row .feature2 {
+    background-image: url("images/skills.png");
+}
+
+.content .content-main .features .container .row .feature3 {
+    background-image: url("images/character.png");
+}
+
+/* Features <-- */
+
+/* Medialinks --> */
+.content .content-main .medialinks {
+    padding : 16px 0px;
+}
+.content .content-main .medialinks h2 {
+    font-size : 300%;
+}
+
+.content .content-main .medialinks .container{
+    width: 100%;
+}
+
+.content .content-main .medialinks .container .row .medialink {
+    text-shadow: 0px 0px 8px rgb(251, 255, 0);
+    padding: 16px 0px 8px 0px;
+    margin: 0px;
+    width: 100%;
+    height: 240px;
+    display: flex;
+	align-items: center;
+}
+
+.content .content-main .medialinks .container .row .medialink p {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.content .content-main .medialinks .container .row .media1,
+.content .content-main .medialinks .container .row .media2,
+.content .content-main .medialinks .container .row .media3,
+.content .content-main .medialinks .container .row .media4,
+ {
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.content .content-main .medialinks .container .row .media1 {
+    background-image: url("images/blog1.png");
+    
+}
+
+.content .content-main .medialinks .container .row .media2 {
+    background-image: url("images/blog2.png");
+}
+
+.content .content-main .medialinks .container .row .media3 {
+    background-image: url("images/blog3.png");
+}
+
+.content .content-main .medialinks .container .row .media4 {
+    background-image: url("images/blog4.png");
+}
+/* Medialinks <-- */
+
+/* Footer --> */
+footer {
+    background-color: rgb(212, 212, 212);
+    color: rgb(53, 53, 53);
+    text-align: center;
+    padding: 24px 0px 48px 0px;
+}
+
+footer .sns ul li {
+    display: inline;
+    padding: 8px;
+}
+
+
+
+
+
+
