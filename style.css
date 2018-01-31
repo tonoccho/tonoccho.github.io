@@ -1,3 +1,12 @@
+body {
+    background-color: black;
+}
+
+
+.container {
+    background-color: white;
+  }
+
 .current_situation {
     text-align: center;
     color: #330000;
@@ -5,10 +14,10 @@
     
 }
 
-
 .snslinkswrapper {
     text-align: right;
 }
+
 .snslinks {
     display: flex;
     justify-content: flex-end;
@@ -32,19 +41,8 @@
     color: white;
 }
 
-.huge-image {
-    width: 100%;
-    max-width: 1280px;
-}
-
-.middle-image {
-    width: 100%;
-    max-width: 320px;
-}
-
-.small-image {
-    width: 100%;
-    max-width: 240px;
+img {
+    max-width: 100%;
 }
 
 .feature h3 {
@@ -60,7 +58,6 @@ footer {
     background-color: grey;
     color: white;
     text-align: center;
-    padding: 24px 0px 32px 0px;
 }
 
 
@@ -72,24 +69,14 @@ footer {
     text-align: center;
 }
 
-.medialink, .feature{
-    padding: 16px 0px 24px 16px;
+@media screen and (min-width: 480px) {
 
 }
 
-h1 {
-    font-size : 600%;
+@media screen and (min-width: 768px) {
+    
 }
 
-h2 {
-    font-size : 400%;
-}
+@media screen and (min-width: 920px) {
 
-h3 {
-    font-size : 200%;
-}
-
-h4 {
-    font-size : 100%;
-    font-weight: bold;
 }
