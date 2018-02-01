@@ -1,0 +1,136 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+.header {
+     background-color: rgba(255,255,255,1.0);
+}
+
+.header-container {
+     width: 100%;
+}
+.header-bg {
+    
+    background-image: url("images/terry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 503px;
+}
+
+.header-bg .header-fg {
+    background-color: rgba(0,0,0, 0.5);
+    height: 100%;
+}
+
+.header-bg .header-fg .header-content {
+    color: rgba(184, 184, 184, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-title {
+    font-size: 800%;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.current-situation{
+    font-size: 100%;
+    color: pink;
+    font-weight: bold;
+    padding: 32px 0px;
+    letter-spacing: 0.2em;
+}
+
+.main-skill {
+    color: white;
+    padding: 32px 0px;
+    width: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.section-inner .section-title {
+    font-size: 400%;
+    letter-spacing: 0.2em;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255,0.5);
+    padding: 32px 0px 16px 0px;
+    margin: 0;
+}
+
+#history {
+    background-image: url("images/history.png");
+}
+
+#skills {
+    background-image: url("images/skills.png");
+}
+
+#character {
+    background-image: url("images/skills.png");
+}
+
+#blog1 {
+    background-image: url("images/blog1.png");
+}
+#blog2 {
+    background-image: url("images/blog2.png");
+}
+#blog3 {
+    background-image: url("images/blog3.png");
+}
+#blog4 {
+    background-image: url("images/blog4.png");
+}
+
+.grid-box {
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-box-inner {
+    background-color: rgba(0, 0, 0, 0.5);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    font-size: 200%;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    width: 100%;
+}
+
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: white; }
+a:active { color: white; }
+
+.container{
+    width: 100%;
+    margin: 0;
+}
+
+.footer {
+    background-color:rgba(0,0,0,0.5);
+    padding: 48px 0px;
+    color: white;
+    text-align: center;
+}
+
+.outerlinks ul li {
+    display: inline;
+}
