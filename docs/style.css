@@ -1,0 +1,51 @@
+
+.header {
+     background-color: rgba(255,255,255,1.0);
+}
+
+.header-container {
+     width: 100%;
+}
+.header-bg {
+    
+    background-image: url("images/terry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 503px;
+}
+
+.header-bg .header-fg {
+    background-color: rgba(0,0,0, 0.5);
+    height: 100%;
+}
+
+.header-bg .header-fg .header-content {
+    color: rgba(184, 184, 184, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-title {
+    font-size: 800%;
+    font-weight: bold;
+    letter-spacing: 16px;
+}
+
+.current-situation{
+    font-size: 100%;
+    color: pink;
+    font-weight: bold;
+    padding: 32px 0px;
+    letter-spacing: 2px;
+}
+
+.main-skill {
+    color: white;
+    padding: 32px 0px;
+    width: 150%;
+    text-align: center;
+    letter-spacing: 4px;
+}
