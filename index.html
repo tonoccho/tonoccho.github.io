@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="terrys-today">
 
 <head>
   <title>Terry's Today</title>
@@ -13,7 +13,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -36,36 +37,19 @@
       </div>
     </header>
 
-    <div class="content-main ">
+    <div class="content-main " ng-controller="IndexController as index">
 
       <section>
         <div class="section-inner">
           <h2 class="section-title">Features</h2>
           <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-md-12 grid-box" id="history">
-                <div class="grid-box-inner">
+
+              <div class="col-lg-4 col-md-12 grid-box" id="{{feature.id}}" ng-repeat="feature in index.features">
+                <div class="grid-box-inner {{feature.fgclass}}">
                   <p>
-                    <a href="#">
-                      Job History
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-12 grid-box" id="skills">
-                <div class="grid-box-inner">
-                  <p>
-                    <a href="#">
-                      My Skills
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-12 grid-box" id="character">
-                <div class="grid-box-inner">
-                  <p>
-                    <a href="#">
-                      Character
+                    <a href="{{feature.linkto}}">
+                      {{feature.title}}
                     </a>
                   </p>
                 </div>
@@ -79,46 +63,14 @@
           <h2 class="section-title">Other Medias</h2>
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 col-md-12 grid-box" id="blog1">
-                <div class="grid-box-inner">
+              <div class="col-lg-6 col-md-12 grid-box" id="{{media.id}}" ng-repeat="media in index.medias">
+                <div class="grid-box-inner {{media.fgclass}}">
                   <p>
-                    <a href="https://seijitonouchi.wordpress.com/ " target="_blank ">
-                      Seiji Tonouchi on the go
+                    <a href="{{media.linkto}}" target="_blank ">
+                      {{media.title}}
                     </a>
                   </p>
                 </div>
-
-
-              </div>
-              <div class="col-lg-6 col-md-12 grid-box" id="blog2">
-                <div class="grid-box-inner">
-                  <p>
-                    <a href="https://nzsaien.wordpress.com/ " target="_blank ">
-                      NZで楽しむ家庭菜園と木
-                    </a>
-                  </p>
-                </div>
-
-              </div>
-              <div class="col-lg-6 col-md-12 grid-box" id="blog3">
-                <div class="grid-box-inner">
-                  <p>
-                    <a href="https://toeic900noneed.wordpress.com/ " target="_blank ">
-                      TOEIC900点台とか別に目指さないブログ
-                    </a>
-                  </p>
-                </div>
-
-              </div>
-              <div class="col-lg-6 col-md-12 grid-box" id="blog4">
-                <div class="grid-box-inner">
-                  <p>
-                    <a href="https://terrystechnote.wordpress.com/ " target="_blank ">
-                      Terry's tech note
-                    </a>
-                  </p>
-                </div>
-
               </div>
             </div>
           </div>
