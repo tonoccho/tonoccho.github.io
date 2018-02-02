@@ -88,16 +88,22 @@
 }
 
 .grid-box-inner {
-    background-color: rgba(0, 0, 0, 0.5);  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    color: white;
     font-size: 200%;
     letter-spacing: 0.2em;
     font-weight: bold;
+}
+
+.fg-black {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.fg-white {
+    background-color: rgba(255,255,255,0.5);
 }
 
 a:link { color: white; }
