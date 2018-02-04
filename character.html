@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="terrys-today-character">
+
+<head>
+    <title>Terry's Today</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+    <script src="js/character.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <div class="nav-inner">
+                <p>
+                    <a href="index.html">HOME</a>
+                </p>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-bg">
+                    <div class="header-fg">
+                        <div class="header-content">
+                            <h1 class="main-title">Terry's Peaceful Character</h1>
+                            <p class="main-skill ">
+                                I like you, you like me
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-main " ng-controller="CharacterController as character">
+            <section>
+                <div class="section-inner">
+                    <div class="section-title">
+                        <h2>Hobbies</h2>
+                    </div>
+                    <div class="character-topic" ng-repeat="character in character.topics">
+                        <h3>{{character.title}}</h3>
+                        <p>
+                            <img src="images/hobby-{{character.id}}.jpg" />
+                        </p>
+                        <p>{{character.text}}</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer ">
+            <div class="footer-inner ">
+                <div class="outerlinks ">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/tonoccho " target="_blank ">
+                                <img src="images/twitter.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/tonoccho " target="_blank ">
+                                <img src="images/facebook.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/seiji-tonouchi/ " target="_blank ">
+                                <img src="images/linkedin.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tonoccho " target="_blank ">
+                                <img src="images/github.png " />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p>&copy; 2018　Seiji (Terry) Tonouchi All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
