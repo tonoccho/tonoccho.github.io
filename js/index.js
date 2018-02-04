@@ -4,7 +4,7 @@ angular.module('terrys-today', [])
         index.features = [
             { title: 'Biography', linkto: 'biography.html', fgclass: 'fg-black', id: 'history' },
             { title: 'My Skills', linkto: 'skills.html', fgclass: 'fg-white', id: 'skills' },
-            { title: 'Character', linkto: '#', fgclass: 'fg-black', id: 'character' }
+            { title: 'Character', linkto: 'character.html', fgclass: 'fg-black', id: 'character' }
         ];
 
         index.medias = [

@@ -65,7 +65,7 @@
 }
 
 #character {
-    background-image: url("images/skills.png");
+    background-image: url("images/character.png");
 }
 
 #blog1 {
@@ -190,4 +190,13 @@ p.level img, p.category img {
 .timeline-event-title {
     font-size: 100%;
     font-weight: normal;
+}
+
+.character-topic {
+    text-align: center;
+    padding: 16px;
+}
+
+.character-topic img {
+    max-width: 100%;
 }

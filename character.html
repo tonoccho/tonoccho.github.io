@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="terrys-today-timeline">
+<html ng-app="terrys-today-character">
 
 <head>
     <title>Terry's Today</title>
@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 
-    <script src="js/timeline.js"></script>
+    <script src="js/character.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -33,9 +33,9 @@
                 <div class="header-bg">
                     <div class="header-fg">
                         <div class="header-content">
-                            <h1 class="main-title">Terry's Biography</h1>
+                            <h1 class="main-title">Terry's Peaceful Character</h1>
                             <p class="main-skill ">
-                                How I lived, How I live, How I will live
+                                I like you, you like me
                             </p>
                         </div>
 
@@ -44,32 +44,18 @@
             </div>
         </header>
 
-        <div class="content-main " ng-controller="TimelineController as timeline">
-
+        <div class="content-main " ng-controller="CharacterController as character">
             <section>
                 <div class="section-inner">
-                    <div class="timeline">
-                        <div class="container">
-                            <div class="row timeline-row" ng-repeat="event in timeline.events">
-                                <div class="col-lg-4 col-md-3 grid-box timeline-date timeline-col">
-                                    <div class="grid-box-inner">
-                                        {{event.date}}
-                                    </div>
-                                </div>
-                                <div class="col-lg-1 col-md-1 grid-box timeline-image timeline-col">
-                                    <div class="grid-box-inner">
-                                        <img src="images/tl-{{event.category}}.png" />
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-7 col-md-8 grid-box timeline-event timeline-col">
-                                    <div class="grid-box-inner">
-                                        <p class="timeline-event-title">{{event.text}}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="section-title">
+                        <h2>Hobbies</h2>
+                    </div>
+                    <div class="character-topic" ng-repeat="character in character.topics">
+                        <h3>{{character.title}}</h3>
+                        <p>
+                            <img src="images/hobby-{{character.id}}.jpg" />
+                        </p>
+                        <p>{{character.text}}</p>
                     </div>
                 </div>
             </section>
