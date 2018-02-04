@@ -83,19 +83,20 @@
 
 .grid-box {
     height: 300px;
-    padding: 0px;
+    padding: 4px;
     margin: 0px;
 }
 
 .grid-box-inner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     flex-direction: column;
     height: 100%;
     font-size: 200%;
     letter-spacing: 0.2em;
     font-weight: bold;
+    padding: 4px;
 }
 
 .fg-black {
@@ -125,4 +126,32 @@ a:active { color: white; }
 
 .outerlinks ul li {
     display: inline;
+}
+
+p.category {
+    font-size: 50%;
+    text-align: center;
+}
+
+p.name {
+    font-size: 110%;
+    text-align: center;
+}
+
+p.level {
+    font-size: 85%;
+    text-align: center;
+}
+
+p.level img, p.category img {
+    max-width: 128px;
+}
+
+.nav-inner{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    margin: 0px;
 }

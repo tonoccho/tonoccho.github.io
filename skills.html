@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng-app="terrys-today-skills">
+
+<head>
+    <title>Terry's Today</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+    <script src="js/skills.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <div class="nav-inner">
+                <p>
+                    <a href="index.html">HOME</a>
+                </p>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-bg">
+                    <div class="header-fg">
+                        <div class="header-content">
+                            <h1 class="main-title">Terry's Bizzare Skillset</h1>
+                            <p class="main-skill ">
+                                A MAN WITH TENS OF SKILLS
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-main " ng-controller="SkillsController as skills">
+
+            <section>
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div ng-repeat="skill in skills.list" class="col-lg-3 col-md-6 grid-box" id="skill-{{skill.id}}">
+                                <div class="grid-box-inner category-{{skill.cid}} fg-white">
+                                    <p class="category ">
+                                        <img src="images/skill-category-{{skill.cid}}.png" />
+                                    </p>
+                                    <p class="name ">{{skill.name}}</p>
+                                    <p class="level ">
+                                        <img src="images/skill-level-{{skill.level}}.png" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer ">
+            <div class="footer-inner ">
+                <div class="outerlinks ">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/tonoccho " target="_blank ">
+                                <img src="images/twitter.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/tonoccho " target="_blank ">
+                                <img src="images/facebook.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/seiji-tonouchi/ " target="_blank ">
+                                <img src="images/linkedin.png " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tonoccho " target="_blank ">
+                                <img src="images/github.png " />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p>&copy; 2018　Seiji (Terry) Tonouchi All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
