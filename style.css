@@ -155,3 +155,39 @@ p.level img, p.category img {
     padding: 8px;
     margin: 0px;
 }
+
+.timeline {
+    padding-top: 24px;
+}
+.timeline-date {
+    font-size: 150%;
+    
+}
+
+
+
+.timeline-image img{
+    max-width: 128px;
+}
+
+
+.timeline-row {
+    padding: 4px;
+    margin:16px;
+}
+
+.timeline-col {
+    padding: 0px;
+    margin: 0px;
+}
+
+.timeline-event-title {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 120%;
+}
+
+.timeline-event-title {
+    font-size: 100%;
+    font-weight: normal;
+}

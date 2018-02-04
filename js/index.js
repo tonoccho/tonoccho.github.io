@@ -2,7 +2,7 @@ angular.module('terrys-today', [])
     .controller('IndexController', function () {
         var index = this;
         index.features = [
-            { title: 'Job History', linkto: '#', fgclass: 'fg-black', id: 'history' },
+            { title: 'Biography', linkto: 'biography.html', fgclass: 'fg-black', id: 'history' },
             { title: 'My Skills', linkto: 'skills.html', fgclass: 'fg-white', id: 'skills' },
             { title: 'Character', linkto: '#', fgclass: 'fg-black', id: 'character' }
         ];
