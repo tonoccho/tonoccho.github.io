@@ -1,3 +1,7 @@
+.content {
+    text-align: center;
+}
+
 .header {
      background-color: rgba(255,255,255,1.0);
 }
@@ -8,6 +12,7 @@
     background-image: url("images/terry.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 503px;
 }
 
@@ -58,27 +63,34 @@
 
 #history {
     background-image: url("images/history.png");
+    background-size: cover;
 }
 
 #skills {
     background-image: url("images/skills.png");
+    background-size: cover;
 }
 
 #character {
     background-image: url("images/character.png");
+    background-size: cover;
 }
 
 #blog1 {
     background-image: url("images/blog1.png");
+    background-size: cover;
 }
 #blog2 {
     background-image: url("images/blog2.png");
+    background-size: cover;
 }
 #blog3 {
     background-image: url("images/blog3.png");
+    background-size: cover;
 }
 #blog4 {
     background-image: url("images/blog4.png");
+    background-size: cover;
 }
 
 .grid-box {
@@ -199,4 +211,8 @@ p.level img, p.category img {
 
 .character-topic img {
     max-width: 100%;
+}
+
+.timeline-event-text {
+    text-align: left;
 }
